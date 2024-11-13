@@ -380,7 +380,7 @@ main (int argc, char **argv)
       errno = 0;
 
       umask (0);
-      i = open ("/dev/null", O_RDWR);
+      i = open ("/dev/null", 0);
       if (i == -1)
 	{
 	  log_msg ("opening /dev/null failed: %s\n", strerror (errno));

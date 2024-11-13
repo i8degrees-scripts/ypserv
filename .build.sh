@@ -9,6 +9,7 @@ fi
 
 ./autogen.sh
 ./configure --prefix="$PREFIX" --includedir=/usr/include/tirpc
+
 if [ -n "$DEBUG" ]; then
   make
 else
